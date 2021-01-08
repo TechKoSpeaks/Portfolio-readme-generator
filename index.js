@@ -2,6 +2,7 @@ const inquirer = require('inquirer');
 const fs = require("fs");
 const util = require("util");
 const createReadme = require("./utilities/createReadme")
+const writeFileAsync = util.promisify(fs.writeFile);
 
 
 function askMe () {
@@ -65,6 +66,23 @@ function askMe () {
         },
     ])
 }
+
+ // Async function using util.promisify 
+ async function promisify() {
+    try {
+        // Ask user questions and generate responses
+        const answers = await askMe();
+        const generateContent = createReadme(answers);
+        // Write new README.md to dist directory
+        await writeFileAsync('./readwrite/README.md', generateContent);
+        console.log(' Successfully wrote to README.md');
+    }   catch(err) {
+        console.log(err);
+    }
+  }
+  
+  promisify();  
+
 
 
 

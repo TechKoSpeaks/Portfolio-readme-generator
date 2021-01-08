@@ -5,7 +5,7 @@ function createReadme(answers) {
   
 
 ## Description
-🔍 ${answers.describe}
+${answers.describe}
 
 ## Table of Contents
 - [Description](#description)
@@ -28,7 +28,6 @@ ${answers.guidelines}
 ${answers.guidelines}
 
 ## License
-${answers.license}-brightblue)
 <br />
 This application is under the ${answers.license} license. 
 
@@ -38,7 +37,6 @@ Find me on GitHub: [${answers.githubUser}](https://github.com/${answers.githubUs
 <br />
 
 Email me with any questions: ${answers.emailAddress}<br /><br />
-
     `;
   }
   
