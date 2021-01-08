@@ -1,7 +1,11 @@
 const inquirer = require('inquirer');
+const fs = require("fs");
+const util = require("util");
+const createReadme = require("./utilities/createReadme")
 
-inquirer
-    .prompt([
+
+function askMe () {
+    return inquirer.prompt([
         {
             type: 'input',
             message: 'Please provide application repository name',
@@ -9,23 +13,23 @@ inquirer
         },
         {
             type: 'input',
-            message: 'What is your project title?',
-            name: 'projectname',
+            message: 'What is the name/title of your project?',
+            name: 'projectName',
         },
         {
             type: 'input',
             message: 'Please enter a short project description',
-            name: 'projectdescribe',
+            name: 'describe',
         },
         {
             type: 'input',
             message: 'Please provide installation instructions',
-            name: 'projectinstruct',
+            name: 'instruct',
         },
         {
             type: 'input',
-            message: 'Provide any usage information here',
-            name: 'usageinfo',
+            message: 'Any usage information?',
+            name: 'usageInfo',
         },
         {
             type: 'input',
@@ -34,10 +38,35 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Any test instructions?',
+            message: 'Any testing information?',
             name: 'instructions',
         },
+        {
+            type: 'list',
+            message: 'How is this project licensed? ',
+            name: 'license',
+            choices: [
+                'Apache',
+                'Academic',
+                'GNU',
+                'ISC',
+                'MIT',
+                'Mozilla',
+                'Open'
+            ],
+        },
+        {   type: 'input',
+            message: 'What is your GitHub username?',
+            name: 'githubUser',
+        },
+        {   type: 'input',
+            message: 'What is your email address?',
+            name: 'emailAddress',
+        },
     ])
+}
+
+
 
 
 
