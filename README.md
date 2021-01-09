@@ -60,6 +60,5 @@ To test, run this command in integrated terminal:
 node index.js
 
 ## License
-<br />
 This application is under the MIT license. 
 
