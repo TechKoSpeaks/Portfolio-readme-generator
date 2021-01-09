@@ -12,10 +12,10 @@ ${answers.describe}
 
 ## Table of Contents
 - [Description](#description)
-- [Installation](#instruct)
-- [Usage](#usageInfo)
-- [Guidelines](#guidelines)
-- [Testing](#instructions)
+- [Installation](#insallation)
+- [Usage](#usage-information)
+- [Guidelines](#contribution-guidelines)
+- [Testing](#test-instructions)
 - [License](#license)
 
 ## Installation
@@ -28,7 +28,7 @@ ${answers.usageInfo}
 ${answers.guidelines}
 
 ## Test Instructions
-${answers.guidelines}
+${answers.instructions}
 
 ## License
 ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)

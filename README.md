@@ -38,7 +38,7 @@ npm install inquirer
 
 ## Working Application
 
-
+![Travis Ko README Generator](./src/tko-readme-generator.gif)
 
 
 ## Test Instructions
