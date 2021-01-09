@@ -2,6 +2,9 @@
 function createReadme(answers) {
     return `
 <h1 align="center">${answers.projectName}</h1>
+
+## Repository Name
+${answers.reponame}
   
 
 ## Description
@@ -28,6 +31,7 @@ ${answers.guidelines}
 ${answers.guidelines}
 
 ## License
+![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
 <br />
 This application is under the ${answers.license} license. 
 
