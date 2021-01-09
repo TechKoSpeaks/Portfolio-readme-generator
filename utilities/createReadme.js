@@ -12,7 +12,7 @@ ${answers.describe}
 
 ## Table of Contents
 - [Description](#description)
-- [Installation](#insallation)
+- [Installation](#installation)
 - [Usage](#usage-information)
 - [Guidelines](#contribution-guidelines)
 - [Testing](#test-instructions)
